@@ -39,6 +39,7 @@ Esto construirá y ejecutará los servicios de frontend, backend y base de datos
 ```sh
 # Backend
 cd BACK
+pip install -r requirements.txt
 py app.py
 ```
 ```sh

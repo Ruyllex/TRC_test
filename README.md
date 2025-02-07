@@ -1,6 +1,6 @@
 # TRC Project
 
-Este es un test de TRC, consiste en una aplicación hecha en **python** con **Flask** para el backend y **Next.js 14 con Tailwind CSS** para el frontend, que se le pueden enviar PDF para que los procese y devuelva las palabras filtras del mismo. Además, está dockerizado para facilitar su despliegue y ejecución.
+Este es un test de TRC, consiste en una aplicación hecha en **python** con **Flask** para el backend y **Next.js 14 con Tailwind CSS** para el frontend, que se le pueden enviar PDF para que los procese, almacene y devuelva las palabras filtras del mismo. Además, está dockerizado para facilitar su despliegue y ejecución.
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -41,6 +41,10 @@ Esto construirá y ejecutará los servicios de frontend, backend y base de datos
 cd BACK
 pip install -r requirements.txt
 py app.py
+# Si nó funciona probar con:
+python app.py
+# o
+python3 app.py
 ```
 ```sh
 # Frontend

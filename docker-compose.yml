@@ -1,0 +1,24 @@
+services:
+  backend:
+    build:
+      context: ./BACK
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - ./BACK:/app
+    depends_on:
+      - frontend
+  frontend:
+    build:
+      context: ./FRONT
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./FRONT:/app
+      - /app/node_modules
+      - /app/.next  
+    environment:
+      - NODE_ENV=production
+

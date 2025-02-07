@@ -1,0 +1,18 @@
+FROM node:18-alpine 
+# Establecer la imagen base con Node.js compatible con Next.js versión 14
+#Alpine es una distribución ligera de Linux, diseñada para ser pequeña y segura. 
+#Esta imagen tiene un tamaño mucho más reducido en comparación con otras distribuciones de Linux, como debian o ubuntu.
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+
+RUN npm install --force
+
+COPY . .
+
+RUN npm run build
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]

@@ -18,9 +18,6 @@ Este es un test de TRC, consiste en una aplicación hecha en **python** con **Fl
 Asegúrate de tener instalados:
 - **Docker** y **Docker Compose**(recomendable, no necesario)
 - **Node.js** (versión compatible con Next.js)
-- **Java 17+** para el backend
-- **PostgreSQL** si decides ejecutarlo sin Docker
-
 ### 2️⃣ Clonar el Repositorio
 ```sh
 git clone https://github.com/Ruyllex/TRC_test.git

@@ -16,7 +16,7 @@ Este es un test de TRC, consiste en una aplicación hecha en **python** con **Fl
 
 ### 1️⃣ Requisitos Previos
 Asegúrate de tener instalados:
-- **Docker** y **Docker Compose**
+- **Docker** y **Docker Compose**(recomendable, no necesario)
 - **Node.js** (versión compatible con Next.js)
 - **Java 17+** para el backend
 - **PostgreSQL** si decides ejecutarlo sin Docker
@@ -35,7 +35,7 @@ docker-compose up --build
 ```
 Esto construirá y ejecutará los servicios de frontend, backend y base de datos.
 
-#### 🔹 Opción 2: Levantar los Servicios Individualmente
+#### 🔹 Opción 2: Levantar los Servicios Individualmente(correr los siguientes scripts en terminales saparadas)
 ```sh
 # Backend
 cd BACK
